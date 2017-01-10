@@ -1,6 +1,6 @@
 {
   "name" : "Pretius APEX Date Range",
-  "version" : "1.0",
+  "version" : "1.1",
   "description" : "The plugin is Oracle APEX item plugin providing new date picker supporting range of dates. The plugin is dedicated to work with Oracle APEX Universal Theme. Behaviour and appeareance of the plugin can be changed with various settings.",
   "keywords" : ["date", "range", "picker", "UT"],
   "homepage" : "https://github.com/Pretius/apex-date-range",
