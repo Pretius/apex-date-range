@@ -1,35 +1,108 @@
-#Pretius APEX Date Range
-##### Oracle APEX item plugin v1.0
-The plugin is Oracle APEX item plugin providing new date picker supporting range of dates. The plugin is dedicated to work with Oracle APEX Universal Theme. Behaviour and appeareance of the plugin can be changed with various settings.
+# Pretius APEX Date Range
 
-Live demo, instructions and more details about the plugin are available directly in [demo application](http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE).
+The plugin is Oracle APEX item plugin providing new date picker supporting range of dates. The plugin is dedicated to work with Oracle APEX Universal Theme. Behaviour and appeareance of the plugin can be changed with various settings.
 
 The plugin is implemented on top of the [Dan Grossman's](http://www.dangrossman.info/) javascript plugin "[Date Range Picker](http://www.daterangepicker.com/)". Not all functionalities of the original plugin were implemented in Pretius APEX Date Range plugin.
 
-##Authors
-Author | Twitter | E-mail
--------|---------|-------
-Bartosz Ostrowski | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
 
-**Pretius Sp. z o.o. Sp. K.**  
-Address: Przy Parku 2/2; 02-384 Warsaw, Poland  
-Website: [http://www.pretius.com](http://www.pretius.com)  
-e-mail: [office@pretius.com](mailto:office@pretius.com)  
+## Preview
 
-##Preview
 ![Alt text](/preview.gif?raw=true "Preview")
 
-##Pretius Plugins for Oracle APEX
-#### Item plugins
-* [Enhanced LOV item](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_ITEM)
-* [Date range](http://apex.pretius.com/apex/f?p=105:DATERANGE)
+## Table of Contents
 
-#### Dynamic action plugins
-* [Client Side Validation](http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION)
-* [Enhanced Modal dialog](http://apex.pretius.com/apex/f?p=105:ENHANCED_MODAL_PAGE)
-* [Enhanced LOV item - tabular form](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_DA)
-* [Nested reports](http://apex.pretius.com/apex/f?p=105:NESTED_REPORTS)
-* [Enhanced Notifications](http://apex.pretius.com/apex/f?p=105:NOTIFICATIONS)
+- [License](#license)
+- [Demo application](#demo-application)
+- [Features at Glance](#features-at-glance)
+- [Roadmap](#roadmap)
+- [Install](#install)
+  - [Install package](#install-package)
+  - [Install procedure](#install-procedure)
+- [Usage guide](#usage-guide)
+- [Plugin Settings](#plugin-settings)
+  - [Plugin Events](#plugin-events)
+  - [Manual Events](#manual-events)
+- [Changelog](#changelog)
+- [Known issues](#known-issues)
+- [About author](#about-author)
+- [About Pretius](#about-pretius)
 
-#### Browser plugins
-* [Enhanced Column Attributes](http://apex.pretius.com/apex/f?p=105:CHROME_EXTENSION)
+
+## License
+
+MIT
+
+## Demo application
+
+[Demo application](http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE)
+
+## Features at Glance
+
+* support for 
+  * single and double items to store start and end date
+  * PL/SQL date format masks
+  * dynamic dates using apex syntax ( +1d, +1w etc )
+  * min/max date
+  * limiting no. of days in range
+  * single/double calendars
+* definable quick picks
+
+
+## Roadmap
+* [ ] Built-in validation on submit
+* [ ] Support for HTML template instead of APEX item(s)
+* [ ] Theme Roller integration
+* [ ] Support for RTL
+
+## Install
+TBD
+
+### Install package
+TBD
+
+### Install procedure 
+
+To successfully install/update the plugin follow those steps:
+
+1. Install package PRETIUS_APEX_DATE_RANGE in Oracle APEX Schema owner (ie. via SQL Workshop)
+1. Install the plugin file dynamic_action_plugin_pretius_apex_date_ranger.sql using Oracle APEX plugin import wizard
+1. Configure application level componenets of the plugin
+
+## Usage guide
+
+### Single APEX item
+
+1. Create APEX item and set type to ```Pretius APEX Date Range [Plug-In]```
+1. Configure the plugin behaviour and appearance with available attributes
+1. Save and run the page
+
+### DOUBLE APEX items
+
+1. Create two APEX items
+    1. ```PX_DATE_FROM``` with type set to ```Pretius APEX Date Range [Plug-In]```
+    1. ```PX_DATE_TO``` with type set to ```Text field```
+1. For ```PX_DATE_FROM``` set 
+    1. ```Mode``` to  ```Two fields for dates``` or ```Two fields for dates - alternative```
+    1. ```Date to item``` to ```PX_DATE_TO```
+1. Save and run the page
+
+## Plugin Settings
+TBD
+
+### Plugin Events
+TBD
+
+### Manual Events
+TBD
+
+## Changelog
+TBD
+
+## Known issues
+TBD
+
+## About author
+TBD
+
+## About Pretius
+TBD
