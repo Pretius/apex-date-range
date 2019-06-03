@@ -76,7 +76,7 @@ To successfully install/update the plugin follow those steps:
 1. Configure the plugin behaviour and appearance with available attributes
 1. Save and run the page
 
-### DOUBLE APEX items
+### Double APEX items
 
 1. Create two APEX items
     1. ```PX_DATE_FROM``` with type set to ```Pretius APEX Date Range [Plug-In]```
@@ -97,6 +97,31 @@ The plugin doesn't expose any new events.
 
 ## Changelog
 
+### 1.2.0
+
+* ```PL/SQL``` the plugin source has been extracted as external package
+* ```PL/SQL``` input attributes such as ```size```, ```length``` etc are derivied by ```APEX_PLUGIN_UTIL.get_element_attributes``` function
+* ```PL/SQL``` When APEX item is in ```readonly``` state it is rendering value only
+* ```PL/SQL``` plugin rendering function has been changed to procedural API
+* ```Plugin``` The plugin is now compatibile with APEX 5.1, 18.x and 19.x
+* ```Plugin``` Support for ```Warn on Unsaved Changes``` has been added
+* ```Plugin``` input reacts to APEX item template options such as ```Size```, ```Strech Form Item```
+* ```Plugin``` input supports ```Floating``` template
+* ```Plugin``` Support for ```Warn on Unsaved Changes``` has been added
+* ```JS``` debugging messages has been added at 3 levels: ```DEBUG```, ```LEVEL6``` and ```LEVEL9```
+
+### 1.1.0
+
+* Calendar ```z-index``` is set to ```700````. Calendar's div is on higher layer than Interactive Report headers and APEX left sidebar position.
+* Hovering non-selectable calendar elements (week day names, week numbers) do not change cursor style.
+* Creating range of dates from session values is fixed.
+* Applying date value triggers Change event on APEX item.
+* When ```Show days of other months``` is not checked, the hidden dates are not clickable.
+* ```Plugin attributes``` Days names of the calendar are not shifted. Calendar renders day names in valid sequence in correlation to the real date. Translation string ```PRETIUS_DATERANGEPICKER_DAYS`` is changed from ```Mo,Tu,We,Th,Fr,Sa,Su``` to ```Su,Mo,Tu,We,Th,Fr,Sa``` - Sunday must be the first day of the week in the trasnlation list.
+
+### 1.0.0
+
+Initial release
 
 ## Known issues
 TBD
