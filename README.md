@@ -93,7 +93,7 @@ Detailed information about how to use every attribute of the plugin is presented
 ![Alt text](images/preview_helptext.gif?raw=true "Built-in help texts")
 
 ### Plugin Events
-The plugin doesn't expose any new events. 
+The plugin doesn't expose any custom events. 
 
 ## Changelog
 
