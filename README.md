@@ -7,7 +7,7 @@ The plugin is implemented on top of the [Dan Grossman's](http://www.dangrossman.
 
 ## Preview
 
-![Alt text](/preview.gif?raw=true "Preview")
+![Alt text](/images/preview.gif?raw=true "Preview")
 
 ## Table of Contents
 
