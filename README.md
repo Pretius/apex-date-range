@@ -87,7 +87,10 @@ To successfully install/update the plugin follow those steps:
 1. Save and run the page
 
 ## Plugin Settings
-TBD
+
+Detailed information about how to use every attribute of the plugin is presented in built-in help texts in APEX Application Builder.
+
+![Alt text](images/preview_helptext.gif?raw=true "Built-in help texts")
 
 ### Plugin Events
 TBD
