@@ -93,19 +93,22 @@ Detailed information about how to use every attribute of the plugin is presented
 ![Alt text](images/preview_helptext.gif?raw=true "Built-in help texts")
 
 ### Plugin Events
-TBD
-
-### Manual Events
-TBD
+The plugin doesn't expose any new events. 
 
 ## Changelog
-TBD
+
 
 ## Known issues
 TBD
 
-## About author
-TBD
+## About Author
+Author | Github | Twitter | E-mail
+-------|--------|---------|-------
+Bartosz Ostrowski | [@bostrowski](https://github.com/bostrowski) | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
 
 ## About Pretius
-TBD
+Pretius Sp. z o.o. Sp. K.
+
+Address | Website | E-mail
+--------|---------|-------
+Przy Parku 2/2 Warsaw 02-384, Poland | [http://www.pretius.com](http://www.pretius.com) | [office@pretius.com](mailto:office@pretius.com)
