@@ -95,6 +95,10 @@ Detailed information about how to use every attribute of the plugin is presented
 ### Plugin Events
 The plugin doesn't expose any custom events. 
 
+### Quick picks
+
+![Alt text](images/preview_qucikpicks.gif?raw=true "Quick picks")
+
 ## Changelog
 
 ### 1.2.0
