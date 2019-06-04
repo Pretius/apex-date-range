@@ -1,6 +1,6 @@
 {
   "name" : "Pretius APEX Date Range",
-  "version" : "1.1",
+  "version" : "1.2.0",
   "description" : "The plugin is Oracle APEX item plugin providing new date picker supporting range of dates. The plugin is dedicated to work with Oracle APEX Universal Theme. Behaviour and appeareance of the plugin can be changed with various settings.",
   "keywords" : ["date", "range", "picker", "UT"],
   "homepage" : "https://github.com/Pretius/apex-date-range",
@@ -11,22 +11,31 @@
   "license" : "MIT",
   "author" : {
     "name" : "Bartosz Ostrowski",
-    "email" : "bostrowski@pretius.com",
-    "url" : "http://pretius.com/technologies/oracle-apex/"
+    "email" : "ostrowski.bartosz@gmail.com",
+    "url" : "http://www.ostrowskibartosz.pl"
   },
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/Pretius/apex-date-range.git"
   },
   "oracle" : {
-    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "versions" : [
+      "11.2.0.1",
+      "12.1.0.1",
+      "12.2.0.1"
+    ],
     "apex" : {
-      "versions" : ["5.0.0"],
+      "versions" : [
+        "5.1.0",
+        "18.1.0",
+        "18.2.0",
+        "19.1.0"
+      ],
       "plugin" : {
         "internalName" : "apex.date.range",
         "type" : "item",
         "demo" : "http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE",
-        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-date-range/master/preview.gif"
+        "previewImage" : "https://github.com/Pretius/apex-date-range/blob/master/images/preview_demo.gif?raw=true"
       }
     }
   }
