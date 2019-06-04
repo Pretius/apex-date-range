@@ -97,7 +97,7 @@ The plugin doesn't expose any custom events.
 
 ### Quick picks
 
-![Alt text](images/preview_qucikpicks.gif?raw=true "Quick picks")
+![Alt text](images/preview_quickpicks.gif?raw=true "Quick picks")
 
 ## Changelog
 
