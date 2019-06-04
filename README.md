@@ -97,6 +97,8 @@ The plugin doesn't expose any custom events.
 
 ### Quick picks
 
+Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object keys represent available quick pick labels. Each key is defined as Array with two elements - start and end of a predefined range. ```Start``` and ```end``` date are instances of ```Moment.js``` JavaScript library. To learn more about Moment.js visit its [home page](http://http://momentjs.com/).
+
 ![Alt text](images/preview_quickpicks.gif?raw=true "Quick picks")
 
 ## Changelog
