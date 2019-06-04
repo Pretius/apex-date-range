@@ -57,8 +57,8 @@ MIT
 ## Install
 
 ### Install package
-1. ```PRETIUS_APEX_DATE_RANGE.sql - the plugin package specification
-1. ```PRETIUS_APEX_DATE_RANGE.plb - the plugin package body
+1. ```PRETIUS_APEX_DATE_RANGE.sql``` - the plugin package specification
+1. ```PRETIUS_APEX_DATE_RANGE.plb``` - the plugin package body
 1. ```dynamic_action_plugin_pretius_apex_nested_reports.sql``` - the plugin installation files for Oracle APEX 5.1 or higher
 
 ### Install procedure 
