@@ -57,23 +57,23 @@ MIT
 ## Install
 
 ### Install package
-1. ```PRETIUS_APEX_DATE_RANGE.sql``` - the plugin package specification
-1. ```PRETIUS_APEX_DATE_RANGE.plb``` - the plugin package body
-1. ```dynamic_action_plugin_pretius_apex_nested_reports.sql``` - the plugin installation files for Oracle APEX 5.1 or higher
+1. `PRETIUS_APEX_DATE_RANGE.sql` - the plugin package specification
+1. `PRETIUS_APEX_DATE_RANGE.plb` - the plugin package body
+1. `dynamic_action_plugin_pretius_apex_nested_reports.sql` - the plugin installation files for Oracle APEX 5.1 or higher
 
 ### Install procedure 
 
 To successfully install/update the plugin follow those steps:
 
-1. Install package ```PRETIUS_APEX_DATE_RANGE``` in Oracle APEX Schema owner (ie. via SQL Workshop)
-1. Install the plugin file ```dynamic_action_plugin_pretius_apex_date_ranger.sql``` using Oracle APEX plugin import wizard
+1. Install package `PRETIUS_APEX_DATE_RANGE` in Oracle APEX Schema owner (ie. via SQL Workshop)
+1. Install the plugin file `dynamic_action_plugin_pretius_apex_date_ranger.sql` using Oracle APEX plugin import wizard
 1. Configure application level componenets of the plugin
 
 ## Usage guide
 
 ### Single APEX item
 
-1. Create APEX item and set type to ```Pretius APEX Date Range [Plug-In]```
+1. Create APEX item and set type to `Pretius APEX Date Range [Plug-In]`
 1. Configure the plugin behaviour and appearance with available attributes
 1. Save and run the page
 
