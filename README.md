@@ -131,7 +131,8 @@ Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object 
 Initial release
 
 ## Known issues
-TBD
+
+* Date format mask `DY`, `Dy` return invalid string for selected date
 
 ## About Author
 Author | Github | Twitter | E-mail
