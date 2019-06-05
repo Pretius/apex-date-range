@@ -89,12 +89,39 @@ To successfully install/update the plugin follow those steps:
 
 ## Plugin Settings
 
+### Attributes
+
 Detailed information about how to use every attribute of the plugin is presented in built-in help texts in APEX Application Builder.
 
 ![Alt text](images/preview_helptext.gif?raw=true "Built-in help texts")
 
+### Component Settings
+
+Component settings can be changed in `Sharec components > Plugins > Pretius APEX date range > Component Settings`
+
+Attribute | Default | Description
+----------|---------------|------------
+First day | `1` | Use this attribute to determine which day of week should be rendered as first day of the week. While default day names are defined as `Mo,Tu,We,Th,Fr,Sa,Su`, default value `1` refers Mo. Value `7` refers Su.
+Button classes | `t-Button t-Button--small` | Use this attribute to determine what classes will be applied to date picker buttons.
+Apply class | `t-Button--hot` | Use this attribute to determine what classes will be applied to Apply button.
+Cancel class |` t-Cancel` | Use this attribute to determine what classes will be applied to Cancel button.
+
 ### Translations
 
+![Alt text](images/preview_daterange_translations.jpg?raw=true "Translations")
+
+To add new translations use `Shared Componentes> Globalization > Text Messages`.
+
+Translation string | Example | Description
+-------------------|---------|-------------
+PRETIUS_DATERANGEPICKER_DAYS | `Su,Mo,Tu,We,Th,Fr,Sa` | Names of days separated with coma.
+PRETIUS_DATERANGEPICKER_MONTHS | `January,February,March,April,May, June,July,August,September, October,November,December` | Names of months separated witm coma
+PRETIUS_DATERANGEPICKER_APPLYLABEL | `Apply` | Label of button confirming selected date range
+PRETIUS_DATERANGEPICKER_CANCELLABEL | `Cancel` | Label of button closing date range picker
+PRETIUS_DATERANGEPICKER_CUSTOM_RANGE | `Custom` | Label of quick pick used to select custom date range
+PRETIUS_DATERANGEPICKER_WEEK_LABEL | `W` | Header for column presenting week numbers
+
+Bartosz Ostrowski | [@bostrowski](https://github.com/bostrowski) | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
 
 
 ### Plugin Events
