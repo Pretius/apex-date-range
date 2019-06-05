@@ -151,7 +151,7 @@ Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object 
 
 ### 1.1.0
 
-* Calendar ```z-index``` is set to ```700````. Calendar's div is on higher layer than Interactive Report headers and APEX left sidebar position.
+* Calendar `z-index` is set to `700`. Calendar's div is on higher layer than Interactive Report headers and APEX left sidebar position.
 * Hovering non-selectable calendar elements (week day names, week numbers) do not change cursor style.
 * Creating range of dates from session values is fixed.
 * Applying date value triggers Change event on APEX item.
