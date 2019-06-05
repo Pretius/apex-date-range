@@ -42,6 +42,7 @@ MIT
 
 ## Features at Glance
 
+* compatible with Oracle APEX 5.1, 18.x, 19.x
 * support for 
   * single and double items to store start and end date
   * PL/SQL date format masks
