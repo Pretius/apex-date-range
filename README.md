@@ -106,7 +106,7 @@ Component settings can be changed in `Sharec components > Plugins > Pretius APEX
 
 Attribute | Default | Description
 ----------|---------------|------------
-First day | `1` | Use this attribute to determine which day of week should be rendered as first day of the week. While default day names are defined as `Mo,Tu,We,Th,Fr,Sa,Su`, default value `1` refers Mo. Value `7` refers Su.
+First day | `2` | Use this attribute to determine which day of week should be rendered as first day of the week. While default day names are defined as `Su, Mo,Tu,We,Th,Fr,Sa`, default value `2` refers Mo. Value `7` refers `Sa`.
 Button classes | `t-Button t-Button--small` | Use this attribute to determine what classes will be applied to date picker buttons.
 Apply class | `t-Button--hot` | Use this attribute to determine what classes will be applied to Apply button.
 Cancel class |` t-Cancel` | Use this attribute to determine what classes will be applied to Cancel button.
