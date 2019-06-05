@@ -108,9 +108,9 @@ Cancel class |` t-Cancel` | Use this attribute to determine what classes will be
 
 ### Translations
 
-![Alt text](images/preview_daterange_translations.jpg?raw=true "Translations")
-
 To add new translations use `Shared Componentes> Globalization > Text Messages`.
+
+![Alt text](images/preview_daterange_translations.jpg?raw=true "Translations")
 
 Translation string | Example | Description
 -------------------|---------|-------------
