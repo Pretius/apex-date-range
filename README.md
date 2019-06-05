@@ -121,9 +121,6 @@ PRETIUS_DATERANGEPICKER_CANCELLABEL | `Cancel` | Label of button closing date ra
 PRETIUS_DATERANGEPICKER_CUSTOM_RANGE | `Custom` | Label of quick pick used to select custom date range
 PRETIUS_DATERANGEPICKER_WEEK_LABEL | `W` | Header for column presenting week numbers
 
-Bartosz Ostrowski | [@bostrowski](https://github.com/bostrowski) | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
-
-
 ### Plugin Events
 The plugin doesn't expose any custom events. 
 
