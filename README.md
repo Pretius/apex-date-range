@@ -157,7 +157,7 @@ Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object 
 * Creating range of dates from session values is fixed.
 * Applying date value triggers Change event on APEX item.
 * When ```Show days of other months``` is not checked, the hidden dates are not clickable.
-* ```Plugin attributes``` Days names of the calendar are not shifted. Calendar renders day names in valid sequence in correlation to the real date. Translation string ```PRETIUS_DATERANGEPICKER_DAYS`` is changed from ```Mo,Tu,We,Th,Fr,Sa,Su``` to ```Su,Mo,Tu,We,Th,Fr,Sa``` - Sunday must be the first day of the week in the trasnlation list.
+* ```Plugin attributes``` Days names of the calendar are not shifted. Calendar renders day names in valid sequence in correlation to the real date. Translation string ```PRETIUS_DATERANGEPICKER_DAYS``` is changed from ```Mo,Tu,We,Th,Fr,Sa,Su``` to ```Su,Mo,Tu,We,Th,Fr,Sa``` - Sunday must be the first day of the week in the trasnlation list.
 
 ### 1.0.0
 
