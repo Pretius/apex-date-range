@@ -138,6 +138,7 @@ Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object 
 ## Changelog
 
 ### 1.2.1
+
 * ```PL/SQL``` support for `mm` and `yy` format mask
 * ```PL/SQL``` support for `\` as format separator
 
