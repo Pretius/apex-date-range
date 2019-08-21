@@ -50,7 +50,9 @@ create or replace package body PRETIUS_APEX_DATE_RANGE as
     v_temp_format := replace( v_temp_format, 'D',     'E'  );
     v_temp_format := replace( v_temp_format, 'AM',    'A'  );
     v_temp_format := replace( v_temp_format, 'PM',    'A'  );
-    v_temp_format := replace( v_temp_format, 'RR',    'YY'  );
+    v_temp_format := replace( v_temp_format, 'RR',    'YY' );
+    v_temp_format := replace( v_temp_format, 'yy',    'YY' );
+    v_temp_format := replace( v_temp_format, 'mm',    'MM' );
 
     --restore exceptions
     v_temp_format := formatExceptions( v_temp_format, 'decode' );
@@ -65,6 +67,10 @@ create or replace package body PRETIUS_APEX_DATE_RANGE as
     v_temp_format := replace( v_temp_format, 'HH24',     'HH'   );
     v_temp_format := replace( v_temp_format, 'fmDD',     'D'    );
     v_temp_format := replace( v_temp_format, 'fmDay',    'dddd' );
+
+    --moment.js don't support "\" as separator
+    --it should be treated as "text" and because of that line below is needed
+    v_temp_format := replace( v_temp_format, '\',    '[\]' );
 
     return v_temp_format;
   end;
