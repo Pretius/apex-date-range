@@ -16,7 +16,7 @@ wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2016.08.24'
 ,p_release=>'5.1.4.00.08'
 ,p_default_workspace_id=>1680777737499838
-,p_default_application_id=>1501
+,p_default_application_id=>1500
 ,p_default_owner=>'APEXCONNECT'
 );
 end;
@@ -24,7 +24,7 @@ end;
 prompt --application/shared_components/plugins/item_type/pretius_apex_range_date
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597051329554913166)
 ,p_plugin_type=>'ITEM TYPE'
 ,p_name=>'PRETIUS_APEX_RANGE_DATE'
 ,p_display_name=>'Pretius APEX Date Range'
@@ -40,13 +40,13 @@ wwv_flow_api.create_plugin(
 ,p_standard_attributes=>'VISIBLE:FORM_ELEMENT:SESSION_STATE:READONLY:SOURCE:FORMAT_MASK_DATE:ELEMENT:WIDTH:PLACEHOLDER'
 ,p_substitute_attributes=>true
 ,p_subscribe_plugin_settings=>true
-,p_version_identifier=>'1.2'
+,p_version_identifier=>'1.2.1'
 ,p_about_url=>'http://apex.pretius.com'
 ,p_files_version=>99
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486656311394423972)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597092308295946196)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>3
 ,p_display_sequence=>30
@@ -60,8 +60,8 @@ wwv_flow_api.create_plugin_attribute(
 ||'<code>"Sa"</code>. Default value is <code>"2" (Mo)</code>'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486657578530445888)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597093575431968112)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>4
 ,p_display_sequence=>40
@@ -73,8 +73,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Use this attribute to determine what classes will be applied to date picker buttons.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486659324212453500)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597095321113975724)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>5
 ,p_display_sequence=>50
@@ -86,8 +86,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Use this attribute to determine what classes will be applied to <code>"Apply"</code> button.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486660357126460433)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597096354027982657)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>6
 ,p_display_sequence=>60
@@ -99,8 +99,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Use this attribute to determine what classes will be applied to <code>"Cancel"</code> button.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(1637126498197150441)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(1747562495098672665)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -113,8 +113,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Picked option defines whether starting and ending date will be stored in one or two APEX items.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637133192008155235)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637126498197150441)
+ p_id=>wwv_flow_api.id(1747569188909677459)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747562495098672665)
 ,p_display_sequence=>20
 ,p_display_value=>'One field'
 ,p_return_value=>'NDP'
@@ -122,8 +122,8 @@ wwv_flow_api.create_plugin_attr_value(
 ,p_help_text=>'Starting and ending date will be stored within the plugin APEX item. Dates are separated with <code>" - "</code> string.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637133564867157243)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637126498197150441)
+ p_id=>wwv_flow_api.id(1747569561768679467)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747562495098672665)
 ,p_display_sequence=>30
 ,p_display_value=>'Two fields'
 ,p_return_value=>'PDP'
@@ -142,8 +142,8 @@ wwv_flow_api.create_plugin_attr_value(
 '</ul>'))
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637151864094168578)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637126498197150441)
+ p_id=>wwv_flow_api.id(1747587860995690802)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747562495098672665)
 ,p_display_sequence=>40
 ,p_display_value=>'Two fields - alternative'
 ,p_return_value=>'PDPA'
@@ -154,8 +154,8 @@ wwv_flow_api.create_plugin_attr_value(
 '</p>'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486616977342683678)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597052974244205902)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>4
 ,p_display_sequence=>145
@@ -163,7 +163,7 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>true
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(2486617539964686390)
+,p_depending_on_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'IN_LIST'
 ,p_depending_on_expression=>'setMinDate'
@@ -194,8 +194,8 @@ wwv_flow_api.create_plugin_attribute(
 '</dl>'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486617208497684652)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597053205399206876)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>5
 ,p_display_sequence=>150
@@ -203,7 +203,7 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>true
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(2486617539964686390)
+,p_depending_on_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'IN_LIST'
 ,p_depending_on_expression=>'setMaxDate'
@@ -234,8 +234,8 @@ wwv_flow_api.create_plugin_attribute(
 '</dl>'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486617539964686390)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597053536866208614)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>6
 ,p_display_sequence=>125
@@ -247,8 +247,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'This attribute allows you to configure the plugin behavior.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486617871152687266)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486617539964686390)
+ p_id=>wwv_flow_api.id(2597053868054209490)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_display_sequence=>0
 ,p_display_value=>'Auto apply'
 ,p_return_value=>'autoApply'
@@ -257,40 +257,40 @@ wwv_flow_api.create_plugin_attr_value(
 'Selecting ending date automatically close the date range picker and insert values to proper APEX item(s).'))
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2487103626395544367)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486617539964686390)
+ p_id=>wwv_flow_api.id(2597539623297066591)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_display_sequence=>1
 ,p_display_value=>'Minimum date'
 ,p_return_value=>'setMinDate'
 ,p_help_text=>'If checked, minimum date must be specified as the <b>Minimum date</b> attribute.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2487104090890545615)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486617539964686390)
+ p_id=>wwv_flow_api.id(2597540087792067839)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_display_sequence=>5
 ,p_display_value=>'Maximum date'
 ,p_return_value=>'setMaxDate'
 ,p_help_text=>'If checked, maximum date must be specified as the <b>Maximum date</b> attribute.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486621072031691282)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486617539964686390)
+ p_id=>wwv_flow_api.id(2597057068933213506)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_display_sequence=>7
 ,p_display_value=>'Limit date range'
 ,p_return_value=>'dateLimit'
 ,p_help_text=>'If checked, range of dates can be limited to the given number of days. The value must be specified as the <b>Limit date range</b> attribute.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486621768525696372)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486617539964686390)
+ p_id=>wwv_flow_api.id(2597057765427218596)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_display_sequence=>10
 ,p_display_value=>'Quick pick(s)'
 ,p_return_value=>'ranges'
 ,p_help_text=>'If checked, the plugin will use predefined ranges of dates. Ranges can be defined in <b>Quick pick(s)</b> attribute.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486623975590714250)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597059972492236474)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>7
 ,p_display_sequence=>109
@@ -306,50 +306,50 @@ wwv_flow_api.create_plugin_attribute(
 ||' elements to be in-line), the plugin displays elements in one column one by one.'))
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486648504369183554)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597084501270705778)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>10
 ,p_display_value=>'Up left'
 ,p_return_value=>'UL'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486648929954184149)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597084926855706373)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>20
 ,p_display_value=>'Up center'
 ,p_return_value=>'UC'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486649310075185022)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597085306976707246)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>30
 ,p_display_value=>'Up right'
 ,p_return_value=>'UR'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486649756034185651)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597085752935707875)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>40
 ,p_display_value=>'Down left'
 ,p_return_value=>'DL'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486650117272186344)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597086114173708568)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>50
 ,p_display_value=>'Down center'
 ,p_return_value=>'DC'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486650526476187715)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486623975590714250)
+ p_id=>wwv_flow_api.id(2597086523377709939)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597059972492236474)
 ,p_display_sequence=>60
 ,p_display_value=>'Down right'
 ,p_return_value=>'DR'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486652404718220706)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597088401619742930)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>8
 ,p_display_sequence=>130
@@ -358,15 +358,15 @@ wwv_flow_api.create_plugin_attribute(
 ,p_is_required=>true
 ,p_default_value=>'7'
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(2486617539964686390)
+,p_depending_on_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'IN_LIST'
 ,p_depending_on_expression=>'dateLimit'
 ,p_help_text=>'If checked, maximum number of days in range is limited to given number. Narrowing range starts after picking first date.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486652898538241723)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597088895439763947)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>9
 ,p_display_sequence=>290
@@ -384,7 +384,7 @@ wwv_flow_api.create_plugin_attribute(
 ' ''Last Month'': [moment().subtract(1, ''month'').startOf(''month''), moment().subtract(1, ''month'').endOf(''month'')]',
 '}'))
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(2486617539964686390)
+,p_depending_on_attribute_id=>wwv_flow_api.id(2597053536866208614)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'IN_LIST'
 ,p_depending_on_expression=>'ranges'
@@ -457,8 +457,8 @@ wwv_flow_api.create_plugin_attribute(
 '</p>'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(1637282978658461487)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(1747718975559983711)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>10
 ,p_display_sequence=>127
@@ -470,8 +470,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'This attribute allows you to configure the plugin appearance.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637295541544463878)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747731538445986102)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>10
 ,p_display_value=>'Quick pick(s) without calendar'
 ,p_return_value=>'alwaysShowCalendars'
@@ -484,32 +484,32 @@ wwv_flow_api.create_plugin_attr_value(
 '</ul>'))
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637295959158464732)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747731956059986956)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>20
 ,p_display_value=>'Single calendar'
 ,p_return_value=>'onlyOneCalendar'
 ,p_help_text=>'If checked, only one month (calendar) is displayed.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637296376189465382)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747732373090987606)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>30
 ,p_display_value=>'Link calendars'
 ,p_return_value=>'linkedCalendars'
 ,p_help_text=>'If checked, months are rendered one after the other. Using navigation arrows results in presenting consecutive months.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637296768756466139)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747732765657988363)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>40
 ,p_display_value=>'Show days of other months'
 ,p_return_value=>'hideOtherMonthDays'
 ,p_help_text=>'If checked, starting/ending days of next/previous month are rendered in calendar(s).'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637297158956467024)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747733155857989248)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>50
 ,p_display_value=>'Show calendar inputs'
 ,p_return_value=>'hideCalendarDateInputs'
@@ -519,24 +519,24 @@ wwv_flow_api.create_plugin_attr_value(
 '*Timepicker is rendered when "HH12" or "HH24" is used in date format. "MI", "SS" and "PM/AM" formats are supported also'))
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637297516677467723)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747733513578989947)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>60
 ,p_display_value=>'Show month as dropdown'
 ,p_return_value=>'showDropdowns'
 ,p_help_text=>'If checked, month and year names are rendered as select lists. Selecting month or year results in jumping to the selected month / year.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637297919422468425)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747733916323990649)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>70
 ,p_display_value=>'Show week numbers'
 ,p_return_value=>'showWeekNumbers'
 ,p_help_text=>'If checked, week numbers are rendered as first column in calendar(s).'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(1637298326191469351)
-,p_plugin_attribute_id=>wwv_flow_api.id(1637282978658461487)
+ p_id=>wwv_flow_api.id(1747734323092991575)
+,p_plugin_attribute_id=>wwv_flow_api.id(1747718975559983711)
 ,p_display_sequence=>80
 ,p_display_value=>'ISO week numbers'
 ,p_return_value=>'showISOWeekNumbers'
@@ -545,8 +545,8 @@ wwv_flow_api.create_plugin_attr_value(
 'Requires <b>Show week numbers</b> to be unchecked.'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486712767788733861)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597148764690256085)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>14
 ,p_display_sequence=>14
@@ -554,7 +554,7 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'PAGE ITEM'
 ,p_is_required=>true
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(1637126498197150441)
+,p_depending_on_attribute_id=>wwv_flow_api.id(1747562495098672665)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'IN_LIST'
 ,p_depending_on_expression=>'PDP,PDPA'
@@ -567,8 +567,8 @@ wwv_flow_api.create_plugin_attribute(
 '</p>'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2486731532046798937)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597167528948321161)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>15
 ,p_display_sequence=>103
@@ -581,8 +581,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Select when the date picker pop-up calendar displays.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486732598380800609)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486731532046798937)
+ p_id=>wwv_flow_api.id(2597168595282322833)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597167528948321161)
 ,p_display_sequence=>10
 ,p_display_value=>'On focus'
 ,p_return_value=>'onFocus'
@@ -590,8 +590,8 @@ wwv_flow_api.create_plugin_attr_value(
 ,p_help_text=>'The calendar pop-up displays as soon as the item receives focus.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486733079146801442)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486731532046798937)
+ p_id=>wwv_flow_api.id(2597169076048323666)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597167528948321161)
 ,p_display_sequence=>20
 ,p_display_value=>'On icon click'
 ,p_return_value=>'onIconClick'
@@ -599,8 +599,8 @@ wwv_flow_api.create_plugin_attr_value(
 ,p_help_text=>'The calendar pop-up displays when the icon is clicked.'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2486734097283802851)
-,p_plugin_attribute_id=>wwv_flow_api.id(2486731532046798937)
+ p_id=>wwv_flow_api.id(2597170094185325075)
+,p_plugin_attribute_id=>wwv_flow_api.id(2597167528948321161)
 ,p_display_sequence=>30
 ,p_display_value=>'Both'
 ,p_return_value=>'both'
@@ -1000,8 +1000,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(250069099530402397)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(360505096431924621)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_file_name=>'pretiusapexdaterangepicker.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
@@ -1117,8 +1117,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(427345000387967242)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(537780997289489466)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_file_name=>'pretiusapexdaterangepicker.css'
 ,p_mime_type=>'text/css'
 ,p_file_charset=>'utf-8'
@@ -1826,8 +1826,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(2320156894363200132)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2430592891264722356)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_file_name=>'daterangepicker.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
@@ -2309,8 +2309,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(2486680657602176717)
-,p_plugin_id=>wwv_flow_api.id(2486615332653390942)
+ p_id=>wwv_flow_api.id(2597116654503698941)
+,p_plugin_id=>wwv_flow_api.id(2597051329554913166)
 ,p_file_name=>'moment.min.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
