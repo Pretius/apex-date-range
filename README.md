@@ -1,44 +1,35 @@
-# Pretius APEX Date Range
+# Pretius Date Range Picker
 
 The plugin is Oracle APEX item plugin providing new date picker supporting range of dates. The plugin is dedicated to work with Oracle APEX Universal Theme. Behaviour and appeareance of the plugin can be changed with various settings.
 
-The plugin is implemented on top of the [Dan Grossman's](http://www.dangrossman.info/) javascript plugin "[Date Range Picker](http://www.daterangepicker.com/)". Not all functionalities of the original plugin were implemented in Pretius APEX Date Range plugin.
+The plugin is implemented on top of the [Dan Grossman's](http://www.dangrossman.info/) javascript plugin "[Date Range Picker](http://www.daterangepicker.com/)". Not all functionalities of the original plugin were implemented in Pretius Date Range Picker plugin.
 
+## Table of Contents
+- [Preview](#preview)
+- [License](#license)
+- [Features at glance](#features-at-glance)
+- [Roadmap](#roadmap)
+- [Installation](#installation)
+  - [Installation procedure](#installation-procedure)
+- [Usage guide & Demo application](#usage-guide-demo-application)
+- [Free support](#free-support)
+  - [Bug reporting and change requests](#bug-reporting-and-change-requests)
+  - [Implementation issues](#implementation-issues)
+- [Become a contributor](#become-a-contributor)
+- [Comercial support](#comercial-support)
+- [Changelog](#changelog)
+- [Known issues](#known-issues)
+- [About Author](#about-author)
+- [About Pretius](#about-pretius)
 
 ## Preview
 
-![Alt text](images/preview_demo.gif?raw=true "Preview")
-
-## Table of Contents
-
-- [License](#license)
-- [Demo application](#demo-application)
-- [Features at Glance](#features-at-glance)
-- [Roadmap](#roadmap)
-- [Install](#install)
-  - [Install package](#install-package)
-  - [Install procedure](#install-procedure)
-- [Usage guide](#usage-guide)
-- [Plugin Settings](#plugin-settings)
-  - [Attributes](#attributes)
-  - [Component settings](#component-settings)
-  - [Translations](#translations)
-  - [plugin events](#plugin-events)
-  - [Quick Picks](#quick-picks)
-  - [Plugin Events](#plugin-events)
-- [Changelog](#changelog)
-- [Known issues](#known-issues)
-- [About author](#about-author)
-- [About Pretius](#about-pretius)
+![Preview gif](images/preview_demo.gif?raw=true "Preview")
 
 
 ## License
 
 MIT
-
-## Demo application
-
-[Demo application](http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE)
 
 ## Features at Glance
 
@@ -59,81 +50,66 @@ MIT
 * [ ] Theme Roller integration
 * [ ] Support for RTL
 
-## Install
+## Installation
 
-### Install package
-1. `src/PRETIUS_APEX_DATE_RANGE.sql` - the plugin package specification
-1. `src/PRETIUS_APEX_DATE_RANGE.plb` - the plugin package body
-1. `src/dynamic_action_plugin_pretius_apex_date_ranger.sql` - the plugin installation files for Oracle APEX 5.1 or higher
-
-### Install procedure 
+### Installation procedure
 
 To successfully install/update the plugin follow those steps:
 
-1. Install package `PRETIUS_APEX_DATE_RANGE` in Oracle APEX Schema owner (ie. via SQL Workshop)
 1. Install the plugin file `dynamic_action_plugin_pretius_apex_date_ranger.sql` using Oracle APEX plugin import wizard
 1. Configure application level componenets of the plugin
 
-## Usage guide
+## Usage guide & Demo application
 
 ### Single APEX item
 
-1. Create APEX item and set type to `Pretius APEX Date Range [Plug-In]`
+1. Create APEX item and set type to `Pretius Date Range Picker [Plug-In]`
 1. Configure the plugin behaviour and appearance with available attributes
 1. Save and run the page
 
 ### Double APEX items
 
 1. Create two APEX items
-    1. ```PX_DATE_FROM``` with type set to ```Pretius APEX Date Range [Plug-In]```
+    1. ```PX_DATE_FROM``` with type set to ```Pretius Date Range Picker [Plug-In]```
     1. ```PX_DATE_TO``` with type set to ```Text field```
 1. For ```PX_DATE_FROM``` set 
     1. ```Mode``` to  ```Two fields for dates``` or ```Two fields for dates - alternative```
     1. ```Date to item``` to ```PX_DATE_TO```
 1. Save and run the page
 
-## Plugin Settings
+### Demo application
+Check different plugin configurations and use cases in our  [Live Demo](http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE)
 
-### Attributes
+## Free support
+Pretius provides free support for the plugins at the GitHub platform. 
+We monitor raised issues, prepare fixes, and answer your questions. However, please note that we deliver the plug-ins free of charge, and therefore we will not always be able to help you immediately. 
 
-Detailed information about how to use every attribute of the plugin is presented in built-in help texts in APEX Application Builder.
+Interested in better support? 
+* [Become a contributor!](#become-a-contributor) We always prioritize the issues raised by our contributors and fix them for free.
+* [Consider comercial support.](#comercial-support) Options and benefits are described in the chapter below.
 
-![Alt text](images/preview_helptext.gif?raw=true "Built-in help texts")
+### Bug reporting and change requests
+Have you found a bug or have an idea of additional features that the plugin could cover? Firstly, please check the Roadmap and Known issues sections. If your case is not on the lists, please open an issue on a GitHub page following these rules:
+* issue should contain login credentials to the application at apex.oracle.com where the problem is reproduced;
+* issue should include steps to reproduce the case in the demo application;
+* issue should contain description about its nature.
 
-### Component Settings
+### Implementation issues
+If you encounter a problem during the plug-in implementation, please check out our demo application. We do our best to describe each possible use case precisely. If you can not find a solution or your problem is different, contact us: apex-plugins@pretius.com.
 
-Component settings can be changed in `Sharec components > Plugins > Pretius APEX date range > Component Settings`
+## Become a contributor!
+We consider our plugins as genuine open source products, and we encourage you to become a contributor. Help us improve plugins by fixing bugs and developing extra features. Comment one of the opened issues or register a new one, to let others know what you are working on. When you finish, create a new pull request. We will review your code and add the changes to the repository.
 
-Attribute | Default | Description
-----------|---------------|------------
-First day | `2` | Use this attribute to determine which day of week should be rendered as first day of the week. While default day names are defined as `Su, Mo,Tu,We,Th,Fr,Sa`, default value `2` refers Mo. Value `7` refers `Sa`.
-Button classes | `t-Button t-Button--small` | Use this attribute to determine what classes will be applied to date picker buttons.
-Apply class | `t-Button--hot` | Use this attribute to determine what classes will be applied to Apply button.
-Cancel class |` t-Cancel` | Use this attribute to determine what classes will be applied to Cancel button.
+By contributing to this repository, you help to build a strong APEX community. We will prioritize any issues raised by you in this and any other plugins.
 
-### Translations
-
-To add new translations use `Shared Componentes> Globalization > Text Messages`.
-
-![Alt text](images/preview_daterange_translations.jpg?raw=true "Translations")
-
-Translation string | Example | Description
--------------------|---------|-------------
-PRETIUS_DATERANGEPICKER_DAYS | `Su,Mo,Tu,We,Th,Fr,Sa` | Names of days separated with coma.
-PRETIUS_DATERANGEPICKER_MONTHS | `January,February,March,April,May, June,July,August,September, October,November,December` | Names of months separated witm coma
-PRETIUS_DATERANGEPICKER_APPLYLABEL | `Apply` | Label of button confirming selected date range
-PRETIUS_DATERANGEPICKER_CANCELLABEL | `Cancel` | Label of button closing date range picker
-PRETIUS_DATERANGEPICKER_CUSTOM_RANGE | `Custom` | Label of quick pick used to select custom date range
-PRETIUS_DATERANGEPICKER_WEEK_LABEL | `W` | Header for column presenting week numbers
-
-### Plugin Events
-The plugin doesn't expose any custom events. 
-
-### Quick picks
-
-Quick pick(s) are defined as JSON object (Quick pick(s) attribute). JSON object keys represent available quick pick labels. Each key is defined as Array with two elements - start and end of a predefined range. ```Start``` and ```end``` date are instances of ```Moment.js``` JavaScript library. To learn more about Moment.js visit its [home page](http://http://momentjs.com/).
-
-![Alt text](images/preview_quickpicks.gif?raw=true "Quick picks")
+## Comercial support
+We are happy to share our experience for free, but we also realize that sometimes response time, quick implementation, SLA, and instant release for the latest version are crucial. That’s why if you need extended support for our plug-ins, please contact us at apex-plugins@pretius.com.
+We offer:
+* enterprise-level assistance;
+* support in plug-ins implementation and utilization;
+* dedicated contact channel to our developers;
+* SLA at the level your organization require;
+* priority update to next APEX releases and features listed in the roadmap.
 
 ## Changelog
 
@@ -180,21 +156,11 @@ Bartosz Ostrowski | [@bostrowski](https://github.com/bostrowski) | [@bostrowsk1]
 ## About Pretius
 Pretius Sp. z o.o. Sp. K.
 
+Pretius is a software company specialized in Java-based and low-code applications, with a dedicated team of over 25 Oracle APEX developers.
+Members of our APEX team are technical experts, have excellent communication skills, and work directly with end-users / business owners of the software. Some of them are also well-known APEX community members, winners of APEX competitions, and speakers at international conferences.
+We are the authors of the translate-apex.com project and some of the best APEX plug-ins available at the apex.world.
+We are located in Poland, but working globally. If you need the APEX support, contact us right now.
+
 Address | Website | E-mail
 --------|---------|-------
-Przy Parku 2/2 Warsaw 02-384, Poland | [http://www.pretius.com](http://www.pretius.com) | [office@pretius.com](mailto:office@pretius.com)
-
-## Support
-Our plugins are free to use but in some cases you might need to contact us. We are willing to assist you but in certain circumstances you will be charged for our time spent on helping you. Please keep in mind we do our best to keep documentation up to date and we won't answer question for which there is explaination in documentation (at github and as help text in application builder).
-
-All request (bug fix / change request) should be posted in Issues Tab at github repository.
-
-### Free support
-We do support the plugin in certain cases such as bug fixing and change request. If you have faced issue that might be bug please check Issues tab in github repository. In case you won't be able to find related issue please raise the issue following these rules:
-
-* issue should contain login credentials to application at apex.oracle.com where issue is reproduced
-* issue should contain steps to reproduce the issue in demo application
-* issue should contain description about it's nature
-
-### Paid support
-In case you are not able to implement the plugin or you are willing to have custom implementation based on the plugin attributes (ie. custom JavaScript callbacks) we are willing to help you. Please send inquiry to apex[at]pretius.com with description what you want us to help you with. We will contact you as soon as possible with pricing and possible dates.
+Żwirki i Wigury 16A, 02-092 Warsaw, Poland | [http://www.pretius.com](http://www.pretius.com) | [office@pretius.com](mailto:office@pretius.com)
