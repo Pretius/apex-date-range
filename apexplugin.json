@@ -41,7 +41,7 @@
         "internalName" : "apex.date.range",
         "type" : "item",
         "demo" : "http://apex.pretius.com/apex/f?p=PLUGINS:DATERANGE",
-        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-date-range/master/preview_demo.gif"
+        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-date-range/master/images/preview_demo.gif"
       }
     }
   }
